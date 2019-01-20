@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Free Code Camp Responsive Web Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id='title'>What Kind Of Warrior Would You Be?</h1>
+
+<div id='form-outer'>
+ <h2 id='reveal'></h2>
+  <p id='description'>First tell us who you are and let us know how to contact you.</p>
+  <form id='survey-form'>
+    <div id='collectInfo'>
+   <label id="name-label" for="name">* Name: <input id='name' required placeholder='Enter your name here....'/></label></br>
+  <label id="email-label" for="email">* Email: <input id='email' type='email' required placeholder='Enter your email address....'/></label></br>
+<label id="number-label" for="age">** Age: <input type="number" min='1' max='99' name="age" id="number" for='age' required placeholder='  1 - 99'/></label>
+</div></br>
+
+<h2 id='role1'>If There's A Fight, What's Your First Move?</h2>
+
+ <div class="rightTab">
+   <label>What do you do first?</label>
+   <select id='dropdown'>
+     <option value="asses">Assess the situation</option>
+     <option value="wingman">Enter the fight with back up</option>
+     <option value="orders">Enter the fight while barking orders</option>
+     <option value="blazeIn">Charge in and get crazy</option>
+     <option value="hangback">Hang back and see what happens</option>
+     
+    </select>
+</div></br><br>
+
+ <div class="rightTab">
+   <label>What is your primary role in a fight?</label>
+   <select id='dropdown2'>
+     <option value="squire">Apprentice</option>
+     <option value="fighter">Fighter</option>
+     <option value="leader">Leader</option>
+     <option value="beserker">Beserker</option>
+     <option value="strategy">Strategist</option>
+     
+    </select>
+</div></br><br>
+
+<div id='radio'>
+  <h2 id='radioOptions'>Weapon Of Choice</h2>
+  <input type="radio" name="weapon" value="Axe"> Axe<br>
+  <input type="radio" name="weapon" value="Sword"> Sword<br>
+  <input type="radio" name="weapon" value="Halberd">Halberd
+</div>
+
+<div id='radio'>
+  <h2 id='radioOptions'>Fighting Style</h2>
+  <input type="radio" name="style" value="twohand"> Two Handed <br>
+  <input type="radio" name="style" value="swordandshield"> Sword and Shield<br>
+  <input type="radio" name="style" value="ranged">Ranged Weapon
+</div></br><br>
+
+<h2 id='whyFight'>What Are You Willing To Fight For?</h2>
+ <div class="rightTab">
+   <label>What is your primary reason for fighting?</label>
+   <select id='dropdown3'>
+     <option value="honor">Honor</option>
+     <option value="glory">Glory</option>
+     <option value="love">Love</option>
+     <option value="patriotism">Patriotism</option>
+     <option value="necessity">Necessity</option>
+     
+    </select>
+</div></br><br>
+
+<h2 id='accessories'>Choose Your Accessories</h2>
+  <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="equips" value="1" type="checkbox" class="userRatings">War Horse</label></li>
+          <li class="checkbox"><input name="equips" value="2" type="checkbox" class="userRatings">Trained Bird of Prey</li>
+          <li class="checkbox"><label><input name="equips" value="3" type="checkbox" class="userRatings">Shield</label></li>
+          <li class="checkbox"><label><input name="equips" value="4" type="checkbox" class="userRatings">Bow and a Quiver of Arrows</label></li>
+          <li class="checkbox"><label><input name="equips" value="5" type="checkbox" class="userRatings">Lance or Spear</label></li>
+          <li class="checkbox"><label><input name="equips" value="6" type="checkbox" class="userRatings">Homing Pigeon</label></li>
+          <li class="checkbox"><label><input name="equips" value="7" type="checkbox" class="userRatings">Small Entourage Consisting of Five men</label></li>
+          <li class="checkbox"><label><input name="equips" value="8" type="checkbox" class="userRatings">Wagon with Supplies</label></li>
+          <li class="checkbox"><label><input name="equips" value="9" type="checkbox" class="userRatings">Spare Horses</label></li>
+          <li class="checkbox"><label><input name="equips" value="10" type="checkbox" class="userRatings">Lead Scouts</label></li>
+          <li class="checkbox"><label><input name="equips" value="10" type="checkbox" class="userRatings">A Pair of Trained Hounds</label></li>
+        </ul>
+      </div>
+</br><br>
+
+<div id='lordlady'>
+  <h2 id='lordorlady'>What Shall we call You?</h2>
+ 
+  <input type="radio" name="style" value="lord"> Lord <br>
+  <input type="radio" name="style" value="lady"> Lady <br>
+  <input type="radio" name="style" value="ruler">Ruler of All!<br>
+   <input type="radio" name="style" value="justName">Just (Your Name)
+</div></br><br>
+
+
+<h2 id='comments'>Is there anything you wish to add?</h2>
+    <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+</div></br><br>
+
+     <button id="submit" type="submit" onclick='submitAll()'>Submit</button>
+
+    </form>
+<footer id='footer'target="_blank">Created by <a href="http://dwdevelops.com/">Dw-Develops</a></footer>
+</div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
